@@ -21,9 +21,6 @@ function M.setup()
     vim.fn.termopen(vim.o.shell)
     vim.cmd('startinsert')
   end, {})
-
-  -- Define o atalho <leader>t para abrir o terminal em popup
-  vim.api.nvim_set_keymap('n', '<leader>t', ':PopupTerminal<CR>', { noremap = true, silent = true })
 end
 
 return M
