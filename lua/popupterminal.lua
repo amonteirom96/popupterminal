@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-  vim.api.nvim_create_user_command('term', function()
+  vim.api.nvim_create_user_command('pterm', function()
     local buf = vim.api.nvim_create_buf(false, true)
     local width = math.floor(vim.o.columns * 0.8)
     local height = math.floor(vim.o.lines * 0.8)
